@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title id="tittle"></title>
+    <% include ../../essentials/headScripts.html %>
+<script type="text/javascript">
+var video=[{
+vid:"Av8ulv2iTx0",
+text:"a vaina loca..."
+},
+{
+vid:"KybAvaM3b90",
+text:"a baby shark... >:("
+},
+{
+vid:"RCufThTuB3M",
+text:"to singapur! :D"
+},
+{
+vid:"V1bFr2SWP1I",
+text:"a happy song! ^^"
+},
+{
+vid:"dQw4w9WgXcQ",
+text:"Rick Astley to rickroll"
+},
+{
+vid:"QiFBgtgUtfw",
+text:" our friend Vladimir"
+},
+{
+vid:"VYOjWnS4cMY",
+text:"to america"
+},
+{
+vid:"E1VQF9tZHGQ",
+text:"some deep tropical beats"
+},
+{
+vid:"MtTBqIAQ434",
+text:"some Peppermint"
+},
+{
+vid:"y6120QOlsfU",
+text:"RUN!!!!!!!"
+},
+{
+vid:"b8HO6hba9ZE",
+text:"Something..."
+},
+{
+vid:"Yid881W2lpI",
+text:"mmm... ye... something..."
+},
+{
+vid:"q6EoRBvdVPQ",
+text:"a yeeee"
+},
+{
+vid:"M2qroMuIluI",
+text:"a Trump"
+},
+{
+vid:"Y5tjtUFL0j4",
+text:"a normal Rave Party"
+},
+{
+vid:"RQmEERvqq70",
+text:"a nice song, this is an error please dont Reload...  :("
+},
+{
+vid:"SPlQpGeTbIE",
+text:"good vives, this song was hard to find btw"
+},
+{
+vid:"hH9M-m3WD0g",
+text:"the Putin Soundtrack"
+},
+{
+vid:"9EJmpP8zoio",
+text:"something u must watch"
+},
+{
+vid:"NvS351QKFV4",
+text:"A German band, dressed as Mongols, singing about Russia..."
+},
+{
+vid:"W8x4m-qpmJ8",
+text:"xue hua piao piao bei feng xiao xiao"
+},
+{
+vid:"cVFDlg4pbwM",
+text:"Una porquería de canción"
+},
+{
+vid:"Fe93CLbHjxQ",
+text:"I ain’t fraid o’ no ghost"
+},
+{
+vid:"_CI-0E_jses",
+text:"a certified hood classic song"
+},
+{
+vid:"VGFTjBb1XUM",
+text:"F to pay respect"
+},
+{
+vid:"3qfiIhtYMXk",
+text:"a song to remember... :'("
+},
+{
+vid:"r5oVy1Kjjvk",
+text:"a good twerking"
+},
+{
+vid:"Ta0bVFKB3B0",
+text:"a good tutorial song"
+},
+{
+vid:"16y1AkoZkmQ",
+text:"Jamaican singers In a German band singing in English About a Russian man"
+},
+{
+vid:"Wl959QnD3lM",
+text:"Putin Walking"
+}
+];
+var randomNum = Math.floor(Math.random() * video.length);
+</script>
+  </head>
+  <body class="bg-dark text-light">
+    <center>
+    <h1 id="persText"></h1>
+    <iframe id="celebratemamen"width="727" height="409" autoplay="1" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </center>
+  </body>
+</html>
+<script type="text/javascript">
+$("#persText")[0].innerText="ma men u dont have permission to be here, we send u "+video[randomNum].text;
+$("#celebratemamen")[0].src="https://www.youtube.com/embed/"+video[randomNum].vid+"?autoplay=1";
+$("#tittle")[0].innerHTML=video[randomNum].text;
+</script>
