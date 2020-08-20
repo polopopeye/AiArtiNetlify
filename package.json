@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/neverendingqs/netlify-express#readme",
   "dependencies": {
-    "ejs-mate": "^3.0.0"
+    "ejs-mate": "^3.0.0",
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "body-parser": "^1.19.0",

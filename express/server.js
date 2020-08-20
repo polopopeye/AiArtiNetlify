@@ -5,6 +5,7 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 const engine = require('ejs-mate');
+const fs = require('fs');
 
 
 
