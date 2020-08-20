@@ -12,6 +12,7 @@ const fs = require('fs');
 
 
 const router = express.Router();
+app.use(express.static('assets'));
 app.set('views', 'views');
 app.engine('ejs', engine);
 router.get('/', (req, res) => {
