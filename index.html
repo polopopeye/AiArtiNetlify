@@ -267,6 +267,12 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 $("#persText")[0].innerHTML="<b id='boldText' class=''>Work in progress</b>, we send you "+video[randomNum].text+" in the meantime";
 setInterval(function(){
   $("#persTime")[0].innerText=countdown( new Date(2020, 11, 1) ).toString();
+var nameUser=$("#mce-FNAME").val();;
+var message=`
+Thank you ${nameUser}, we will glad to notify you the features when the first stable version is ready.
+`;
+  $("#mce-success-response").html(message);
+
 },1000)
 setInterval(function(){
 
@@ -292,5 +298,14 @@ document.getElementById("boldText").classList.add(colorPalete[randomColor].bold)
 #celebratemamen {
   /* VISIBILITY: HIDDEN; */
   border-radius: 7em;
+}
+
+/* element.style {
+} */
+#mce-success-response {
+    background: lightgreen;
+    border-radius: 7px;
+    padding: 2em;
+    font-weight: bold;
 }
 </style>
