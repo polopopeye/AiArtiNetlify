@@ -227,14 +227,9 @@ setInterval(function(){
   $("#persTime")[0].innerText=countdown( new Date(2020, 11, 1) ).toString();
 },1000)
 setInterval(function(){
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  var x1 = Math.floor(Math.random() * 256);
-  var y1 = Math.floor(Math.random() * 256);
-  var z1 = Math.floor(Math.random() * 256);
-  var bgColor1 = "rgb(" + x1 + "," + y1 + "," + z1 + ")";
+
+  var bgColor = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+  var bgColor1 = "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
   $("#smallText")[0].style.background=bgColor;
   $("#smallText")[0].style.color=bgColor1;
   for (var i = 0; i <   $("img").length; i++) {
