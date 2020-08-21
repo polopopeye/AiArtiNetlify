@@ -264,10 +264,13 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   </body>
 </html>
 <script type="text/javascript">
+var nameUser;
 $("#persText")[0].innerHTML="<b id='boldText' class=''>Work in progress</b>, we send you "+video[randomNum].text+" in the meantime";
 setInterval(function(){
   $("#persTime")[0].innerText=countdown( new Date(2020, 11, 1) ).toString();
-var nameUser=$("#mce-FNAME").val();;
+if ($("#mce-FNAME").val().length>2) {
+nameUser=$("#mce-FNAME").val();
+}
 var message=`
 Thank you ${nameUser}, we will glad to notify you the features when the first stable version is ready.
 `;
