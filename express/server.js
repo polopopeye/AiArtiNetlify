@@ -15,13 +15,13 @@ const router = express.Router();
 app.use(express.static('assets'));
 app.set('views', 'views');
 app.engine('ejs', engine);
-router.get('/', (req, res) => {
-  // res.writeHead(200, { 'Content-Type': 'text/html' });
-  // res.write('<h1>Hello from Express.js!</h1>');
-  res.render('ejs/ArtiMotor/workInProgress.ejs');
-
-  // res.end();
-});
+// router.get('/', (req, res) => {
+//   // res.writeHead(200, { 'Content-Type': 'text/html' });
+//   // res.write('<h1>Hello from Express.js!</h1>');
+//   res.render('ejs/ArtiMotor/workInProgress.ejs');
+//
+//   // res.end();
+// });
 router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 router.post('/', (req, res) => res.json({ postBody: req.body }));
 
