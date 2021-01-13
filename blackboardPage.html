@@ -45,7 +45,18 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDCfa0UEfvcS7OkRuhQimCOlFCVzEUpdo" async defer></script>
     <!-- <link rel="stylesheet" href="/imgfiles/blackboard3D/style.css" > -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-loading-overlay/2.1.7/loadingoverlay.min.js"></script> -->
-
+<style media="screen">
+  #blackboardPage{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
+</style>
+<script type="text/javascript">
+  setInterval(function(){
+    $("#containerTOP").height($("#blackboardpage").height());
+  },500);
+</script>
   </head>
 
   <body>
