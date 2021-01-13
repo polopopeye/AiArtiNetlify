@@ -4,8 +4,8 @@
   <meta name="VersionID" content="Alpha" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <meta charset="UTF-8"/>
 
     <title>BlackBoard Data Manager</title>
 
@@ -49,178 +49,13 @@
   </head>
 
   <body>
-    <!-- FIN CABECERA: DENTRO DE ZONA BLACKBOARD -->
-    <div id="wrapper">
 
-
-
-      <!--INICIO MODALS -->
-
-      <!--FIN MODALS -->
-
-
-      <nav id="menuVertical" class="navbar-default navbar-static-side" role="navigation">
-        <div class="sidebar-collapse">
-          <ul class="nav metismenu" id="side-menu">
-            <li class="nav-header">
-              <div class="dropdown profile-element text-center">
-                <!-- <a href="/informacion-cliente"><img src="https://mmdevel.1d3a.com/files/186-556-fichero/tmpsTanfxA8WipB8W2E.png" class="logo_cliente lateral" alt="#"></a> -->
-
-                <div class="mt-3" id="informacion_lateral">
-                  <a href="/informacion-cliente" class="nombre_cliente lateral">Empresa SA</a><br>
-                  <a href="/modificar-perfil" class="nombre_cliente lateral">Kenneth Suarez</a>
-                </div>
-
-              </div>
-            </li>
-
-
-
-      <!-- INICIO MENU LATERAL -->
-      <li id="blackboardControls" class="menu" style="height:1px;" >
-
-        <a onclick="menuTopSwitch();cameraReset();"id="butonTopMenu" data-dismiss="modal"  class="bg-gray ">
-          <!-- <i class="fas fa-save  iconMenuItem"></i> -->
-      <span id="menuPrincipal_2_Iframe_Act" style="margin-right: 2em;" class="nav-label"></span><img class="iconoactivadoManuVertical"  src="/imgfiles/blackboard3D/img/textures/program/menuverticalActivado.png"/>
-        </a>
-        <a onclick="switchTooltip();"id="butonTooltipMenu" data-dismiss="modal"  class="bg-gray ">
-      <span id="tooltipslangstartID" style="margin-right: 2em;" class="nav-label"></span><img class="iconoactivadoManuVertical"  src="/imgfiles/blackboard3D/img/textures/program/menuverticalActivado.png"/>
-        </a>
-        <a onclick="cambioFondoSwitch();" id="butonPlantillaMenu2OLD" data-dismiss="modal"  class="bg-gray " style="display:none;">
-          <!-- <i class="fas fa-save  iconMenuItem"></i> -->
-        <span id="menuPrincipal_Template_Iframe_Act2" style="margin-right: 2em;" class="nav-label"></span><img class="iconoactivadoManuVertical"  src="/imgfiles/blackboard3D/img/textures/program/menuverticalActivado.png"/>
-        </a>
-        <a id="butonPlantillaMenu" onclick="searchParamsPlantListData(idSportBlackboard);loadModalPlantlistSelector();" data-toggle="modal" data-target="#templateSelectorModal"  class="bg-gray "  >
-          <!-- <i class="fas fa-save  iconMenuItem"></i> -->
-          <i class="fas fa-swatchbook"></i>
-        <span id="menuPrincipal_Template_Iframe_Act" style="margin-right: 2em;" class="nav-label"></span>
-        </a>
-
-        <a onclick="cambioFondoSwitch21();" id="butonPlantillaMenuEscenario" data-dismiss="modal"  class="bg-gray ">
-          <!-- <i class="fas fa-save  iconMenuItem"></i> -->
-        <span id="menuPrincipal_Stadium_Iframe_Act" style="margin-right: 2em;" class="nav-label"></span><img class="iconoactivadoManuVertical"  src="/imgfiles/blackboard3D/img/textures/program/menuverticalActivado.png"/>
-        </a>
-        <a onclick="stopCreateEditAll();" data-toggle="modal" data-dismiss="modal"  data-target="#saveBlackboard" class="bg-primary ">
-          <i class="fas fa-save  iconMenuItem"></i>
-        <span id="menuPrincipal_SaveButton" class="nav-label"></span>
-        </a>
-        <a onclick="stopCreateEditAll();exportUpdateBlackboard();" data-toggle="modal" data-dismiss="modal"  data-target="#exportBlackboard" class="bg-primary ">
-          <i class="fas fa-download  iconMenuItem"></i>
-        <span id="menuPrincipal_ExportButton" class="nav-label"></span>
-        </a>
-        <a  style="border-top-style: solid;
-          border-width: 1px;
-          border-color: #343a40;"  onclick="stopCreateEditAll();" data-toggle="modal" data-dismiss="modal"  data-target="#saveBlackboardPreStaticPositions" class="bg-primary ">
-          <i class="fas fa-file-download  iconMenuItem"></i>
-        <span id="menuPrincipal_PreStatictButton" class="nav-label"></span>
-        </a>
-        <a  class="bg-primary "id="OpenModalPreStaticBlackboard" data-dismiss="modal" onclick="stopCreateEditAll();listPreStaticsObjects();"  data-target="#galeriaPreestaticasBlackboard" data-toggle="modal" type="button" name="button" >
-          <i class="fas fa-file-upload  iconMenuItem"></i>
-          <span id="menuPrincipal_GalleryPositionsButton" class="nav-label"></span>
-        </a>
-
-      <a data-dismiss="modal" onclick="stopCreateEditAll();"  data-target="#crear" data-toggle="modal" type="button" name="button" >
-        <i class="fas fa-icons  iconMenuItem"></i>
-        <span id="menuPrincipal_GalleryButton" class="nav-label"></span>
-
-      </a>
-      <a data-dismiss="modal" onclick="stopCreateEditAll();loadUserConfigModal();"  data-target="#configModal1" data-toggle="modal" type="button" name="button" >
-        <i class="fas fa-wrench iconMenuItem"></i>
-        <span class="nav-label">Configuración Pizarra</span>
-
-      </a>
-
-
-
-
-      <div id="favBlackBoardList" style="display: inline-grid;
-          width: 100%;
-          height: auto;">
-
-      </div>
-
-      </li>
-      <!-- FIN MENU LATERAL -->
-
-            <li id="configuracionItemBlack"class="menu">
-
-              <a href="#">
-                <i class="fa fa-cog"></i>
-                <span class="nav-label">CONFIGURAR</span> <span class="fa arrow"></span>
-              </a>
-              <ul class="nav nav-second-level">
-                <li><a href='/invitaciones'>INVITACIONES</a></li>
-              </ul>
-              <a data-toggle="modal" data-dismiss="modal"  data-target="#exitAlerta" class="bg-gray">
-                <i class="fas fa-sign-out-alt"></i>
-                <span class="nav-label">SALIR</span>
-              </a>
-              <hr>
-            </li>
-
-          </ul>
-        </div>
-      </nav>
-
-      <div id="page-wrapper">
-        <!-- inicio menu -->
-        <nav id="menuHorizontal" class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-              <a class="navbar-minimalize minimalize-styl-2"><i class="fa fa-bars rotate"></i> </a>
-              <a href="/informacion-cliente" title="">
-                <img id="logo_clienteID" src="/imgfiles/blackboard3D/models/campFutbol/soccer_stadium_blend/textures/logofcb.png" class="logo_cliente" alt="logo cliente">
-              </a>
-
-            </div>
-
-
-
-            <div class="ml-auto mt-2 form-inline d-none d-sm-flex mr-3" id="inline-select">
-
-
-
-
-
-            </div>
-
-
-
-            <div class="dropdown profile-element d-flex align-items-center" id="profile">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="true">
-                <img alt="image" src="#" id="img-profile">
-              </a>
-              <ul class="dropdown-menu animated fadeInRight m-t-xs" id="profile-menu">
-                <li><a class="dropdown-item" href="/modificar-login">Cambiar Login</a></li>
-                <li><a class="dropdown-item" href="/modificar-perfil">Editar Perfil</a></li>
-                <!--<li class="dropdown-divider"></li>--> <!-- es la linea divisoria entre Editar perfil y logout -->
-                <li><a class="dropdown-item" href="/logout">Salir</a></li>
-              </ul>
-            </div>
-
-
-
-            <div class="col-12">
-              <div class="d-flex d-sm-none">
-
-
-
-
-              </div>
-            </div>
-
-          </nav>
-
-    <!-- fin menu -->
-<body>
     <div id="blackboardpage">
       <option id="blackboard3D_UIDURL">lmsfcl0ndm5u607tchklafhord10951h</option>
       <option id="blackboard3DactualUser">116</option>
       <option id="blackboard3Denvironment">bmdevel.1d3a.com</option>
     <script src="https://bmdevel.1d3a.com/imgfiles/blackboard3D/blackboard3D.js"></script>
   </div>
-
-  </div>
-</div>
 
 </body>
 </html>
